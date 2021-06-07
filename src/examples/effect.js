@@ -35,7 +35,7 @@ function App() {
 		console.log('ComponentDidMount');
 
 		window.addEventListener('mousemove', mouseMoveHandler);
-		// Good practice = to remove all EventListeners - Callback trick
+		// Good practice = to remove all EventListeners (to clear memory) - Callback trick
 		return () => {
 			window.removeEventListener('mousemove', mouseMoveHandler);
 		}

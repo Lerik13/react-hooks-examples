@@ -45,7 +45,7 @@ function App() {
 			<h1>Counter {counter}</h1>
 			<button className='btn btn-success' onClick={increment}>Add</button>
 			<button className='btn btn-danger' onClick={decrement}>Minus</button>
-			<button className='btn btn-default' onClick={updateTitle}>Change Titie</button>
+			<button className='btn btn-default' onClick={updateTitle}>Change Title</button>
 
 			<pre>{JSON.stringify(state, null, 2)}</pre>
 		</div>
