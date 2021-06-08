@@ -1,10 +1,12 @@
 import React from 'react';
+import {useAlertToggle} from './alert/AlertContext';
 
-export default function Main({ toggle }) {
+export default function Main() {
+	const toggle = useAlertToggle();
 	return (
 		<div>
 			<h1>Sample with Context</h1>
-			<button className='btn btn-success' onClick={toggle}>Show alert</button>
+			<button onClick={toggle} className='btn btn-success'>Show alert</button>
 		</div>
 	)
 }
